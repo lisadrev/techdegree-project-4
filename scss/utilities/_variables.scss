@@ -1,0 +1,42 @@
+//Descriptive color variables
+
+$malibu-blue   : #51ddfc;
+$emerald       : #62cc6f;
+$blush         : #e4757a;
+$coral         : #fd7856;
+$purple-majesty: #927ac1;
+$grey          : #858585;
+$white         : #ffffff;
+
+
+$color-text: $grey;
+$color-link-visited: $white;
+$bg-color-link-visited: $emerald;
+
+
+
+// UI theme__colors
+$ui-colors: (
+  default: $malibu-blue,
+  success: $emerald,
+  error: $blush,
+  warning: $coral,
+  info: $purple-majesty
+);
+
+//Fonts
+
+$stack-sans-serif: Roboto, sans-serif;
+
+//Asset Paths
+
+$path-img: '../img';
+
+
+//Breakpoints
+
+$brkpoint-narrow: 480px;
+$brkpoint-wide: 1400px;
+
+//Border-Radius
+$br: 10px;

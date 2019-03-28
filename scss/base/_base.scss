@@ -1,0 +1,5 @@
+
+body {
+  font-family: $stack-sans-serif;
+  @include text ($size: 16px, $l-height: 1.5, $color: $color-text);
+}
