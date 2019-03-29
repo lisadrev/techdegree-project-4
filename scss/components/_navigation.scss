@@ -1,0 +1,23 @@
+// **********************************************
+// _navigtion.scss
+// **********************************************
+
+nav {
+  text-align: center;
+  ul {
+    list-style-type: none;
+    padding: 0;
+      li a {
+        display: block;
+        padding: 10px;
+        color: $color-text;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          background-color: $riptide;
+          color: $color-link-visited;
+          border-radius: $br;
+        }
+      }
+   }
+}

@@ -1,14 +1,30 @@
+// **********************************************
+// _variables.scss
+// **********************************************
+
+
+
 //Descriptive color variables
 
+$grey          : #858585;
+$white         : #ffffff;
 $malibu-blue   : #51ddfc;
 $emerald       : #62cc6f;
 $blush         : #e4757a;
 $coral         : #fd7856;
 $purple-majesty: #927ac1;
-$grey          : #858585;
-$white         : #ffffff;
+$riptide       : #80e8d1;
+$french-lilac  : #deb2ee;
+$baby-blue     : #7ee6fd;
+$algae-green   : #88dda2;
+$steel-blue    : #428fb3;
+$sea-pink      : #ec9ea3;
+$salmon        : #fa9675;
 
 
+
+
+// Text
 $color-text: $grey;
 $color-link-visited: $white;
 $bg-color-link-visited: $emerald;
@@ -26,7 +42,8 @@ $ui-colors: (
 
 //Fonts
 
-$stack-sans-serif: Roboto, sans-serif;
+$stack-sans-serif: 'Roboto', sans-serif;
+$font-weight-light: 100;
 
 //Asset Paths
 
@@ -35,8 +52,9 @@ $path-img: '../img';
 
 //Breakpoints
 
-$brkpoint-narrow: 480px;
-$brkpoint-wide: 1400px;
+$brkpoint-sm  :1px;
+$brkpoint-md  :767px;
+
 
 //Border-Radius
-$br: 10px;
+$br: 5px;

@@ -1,5 +1,19 @@
 
+* {
+  box-sizing: border-box;
+}
+
+
+
 body {
   font-family: $stack-sans-serif;
-  @include text ($size: 16px, $l-height: 1.5, $color: $color-text);
+  @include text ($size: 18px, $l-height: 1.5, $color: $color-text);
+}
+
+.headline {
+  @include m(secondary) {
+    font-family: $stack-sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+  }
 }
