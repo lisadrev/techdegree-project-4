@@ -2,6 +2,13 @@
 // _mixins.scss
 // **********************************************
 
+// Element
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
 
 // Modifier
 

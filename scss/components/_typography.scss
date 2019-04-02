@@ -2,15 +2,33 @@
 // _typography.scss
 // **********************************************
 
-
-h1, h2, h3, h4, p {
-  margin: 0 0 .75em;
+.headline {
+  @include m(secondary) {
+    font-family: $stack-sans-serif;
+    font-weight: $font-weight--light;
+    line-height: 1.2;
+  }
 }
 
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-p:last-child {
-  margin: 0;
+.headline {
+  @include m(primary) {
+    @include text ($size:30px, $l-height:1.2, $weight:$font-weight--bold, $color:$riptide);
+    @extend %padding-left;
+    padding-top: 7px;
+    padding-bottom: 15px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  @include text($size:$base-text-size, $weight:$font-weight--bold, $color:$malibu-blue);
+}
+
+.blockquote {
+  @include text($size:26px, $l-height:1.2, $weight:$font-weight--medium, $color:$color-text);
+  font-style: oblique;
+  @extend %padding-left;
+  margin-right: 0;
+  border-left: 8px solid $riptide;
+  border-radius: $br;
 }

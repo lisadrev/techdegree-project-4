@@ -1,0 +1,23 @@
+// **********************************************
+// _forms.scss
+// **********************************************
+
+.form {
+  @include e(label) {
+    @include m(hidden) {
+      @extend .srt;
+    }
+  }
+  @include e(input) {
+    display: block;
+    @include text($size:16px, $weight:$font-weight--bold, $color:$color-text);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 8px solid $riptide;
+
+
+
+
+  }
+}

@@ -27,7 +27,7 @@ $salmon        : #fa9675;
 // Text
 $color-text: $grey;
 $color-link-visited: $white;
-$bg-color-link-visited: $emerald;
+$bg-color-link-visited: $riptide;
 
 
 
@@ -43,7 +43,13 @@ $ui-colors: (
 //Fonts
 
 $stack-sans-serif: 'Roboto', sans-serif;
-$font-weight-light: 100;
+$base-text-size: 17px;
+
+
+$font-weight--light: 300;
+$font-weight--medium: 500;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
 
 //Asset Paths
 

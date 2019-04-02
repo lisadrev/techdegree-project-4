@@ -7,3 +7,10 @@
     @extend %centered;
   }
 }
+
+.img {
+  @include m(avatar) {
+    @extend %centered;
+    padding-top: 20px;
+  }
+}
