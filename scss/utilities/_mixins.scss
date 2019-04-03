@@ -41,6 +41,18 @@
   }
 }
 
+// Theme UI $ui-colors
+
+@mixin bg-color ($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+      @content;
+    }
+  }
+
+}
+
 // Flex
 
 @mixin flex-item ($grow, $shrink:null, $basis:null) {

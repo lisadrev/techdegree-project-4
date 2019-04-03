@@ -9,15 +9,18 @@
     }
   }
   @include e(input) {
-    display: block;
     @include text($size:16px, $weight:$font-weight--bold, $color:$color-text);
-    width: 100%;
-    padding-top: 20px;
+    display: block;
+    width: 95%;
+    padding-top: 30px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    margin: 0 auto;
+    border: none;
     border-bottom: 8px solid $riptide;
-
-
-
-
+    background-color: $white;
+    &:not(:last-of-type) {
+      margin-bottom: 1em;
+    }
   }
 }

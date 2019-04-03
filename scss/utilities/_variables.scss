@@ -33,11 +33,22 @@ $bg-color-link-visited: $riptide;
 
 // UI theme__colors
 $ui-colors: (
-  default: $malibu-blue,
-  success: $emerald,
-  error: $blush,
-  warning: $coral,
-  info: $purple-majesty
+  'login': $malibu-blue,
+  'default': $malibu-blue,
+  'success': $emerald,
+  'error': $blush,
+  'warning': $coral,
+  'info': $purple-majesty
+);
+
+$grid-colors: (
+  '3':  $french-lilac,
+  '4':  $baby-blue,
+  '5':  $algae-green,
+  '6':  rgba($steel-blue, .7),
+  '7':  $sea-pink,
+  '8':  $salmon,
+  '12': $riptide
 );
 
 //Fonts

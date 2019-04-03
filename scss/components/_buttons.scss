@@ -1,0 +1,20 @@
+
+
+// **********************************************
+// _button.scss
+// **********************************************
+
+button {
+  @extend %btn;
+  @include text($size:16px, $weight:$font-weight--bold, $color:$white);
+  text-transform: uppercase;
+  margin-top:1.5em;
+  background-color: pink;
+}
+
+.btn {
+  @include bg-color ($ui-colors);
+  @include m(info) {
+    margin-bottom: 3em;
+  }
+}

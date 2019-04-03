@@ -7,7 +7,7 @@
 // **********************************************
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 2em auto;
 }
 
@@ -35,7 +35,14 @@
 
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
-      &--#{$i} {
+      &--#{$i}.theme__colors {
+        @extend %btn;
+        @extend %padding-left;
+        @include text($size: 15px, $weight:$font-weight--bold, $color:$color-text);
+        background-color: map-get($grid-colors, #{$i});
+
+
+
 
         // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
