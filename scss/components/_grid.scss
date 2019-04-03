@@ -35,11 +35,13 @@
 
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
-      &--#{$i}.theme__colors {
+      &--#{$i}{
+        &.theme__colors {
         @extend %btn;
         @extend %padding-left;
         @include text($size: 15px, $weight:$font-weight--bold, $color:$color-text);
         background-color: map-get($grid-colors, #{$i});
+        }
 
 
 
@@ -58,11 +60,16 @@
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
+
+          $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+          $target: ($g-col-width * $i) + ($g-gutter-width * ($i));
+          width: percentage($target / $context);
         }
       }
     }
   }
 }
+
 
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {

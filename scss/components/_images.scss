@@ -19,3 +19,11 @@ img {
     margin-bottom: 20px;
   }
 }
+
+@include mq(wide) {
+  .img {
+    @include m(logo) {
+      width: 110px;
+    }
+  }
+}
