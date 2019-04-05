@@ -18,3 +18,15 @@ button {
     margin-bottom: 3em;
   }
 }
+
+@include mq(wide){
+  .grid__col--12 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    & button {
+      margin-right: 30px;
+    }
+  }
+}

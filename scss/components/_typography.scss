@@ -7,6 +7,9 @@
     font-family: $stack-sans-serif;
     font-weight: $font-weight--light;
     line-height: 1.2;
+    @include mq(wide) {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -15,7 +18,7 @@
     @include text ($size:30px, $l-height:1.2, $weight:$font-weight--bold, $color:$riptide);
     @extend %padding-left;
     padding-top: 7px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 }
 
@@ -31,4 +34,12 @@
   margin-right: 0;
   border-left: 8px solid $riptide;
   border-radius: $br;
+}
+
+.card {
+  margin-right: 50px;
+}
+
+@include mq(wide) {
+
 }

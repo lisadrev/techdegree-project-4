@@ -21,6 +21,9 @@
     background-color: $white;
     &:not(:last-of-type) {
       margin-bottom: 1em;
+      }
+    @include mq(wide) {
+      border-bottom-width: 6px;
+    }
     }
   }
-}
