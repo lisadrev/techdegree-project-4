@@ -4,27 +4,27 @@
 // _button.scss
 // **********************************************
 
-button {
+
+
+.btn--default.theme__colors,
+.btn--success.theme__colors,
+.btn--error.theme__colors,
+.btn--warning.theme__colors,
+.btn--info.theme__colors {
   @extend %btn;
   @include text($size:16px, $weight:$font-weight--bold, $color:$white);
   text-transform: uppercase;
   margin-top:1.5em;
-  background-color: pink;
 }
 
 .btn {
   @include bg-color ($ui-colors);
-  @include m(info) {
-    margin-bottom: 3em;
   }
-}
 
 @include mq(wide){
   .grid__col--12 {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    @include flex($just:space-around, $alignI:flex-start);
+    padding-left: 20px;
     & button {
       margin-right: 30px;
     }

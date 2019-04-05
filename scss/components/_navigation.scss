@@ -8,16 +8,13 @@ nav {
     list-style-type: none;
     padding: 0;
     @include mq(wide) {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        @include flex($just:flex-start);
         position: absolute;
-        left: 40%;
+        left: 50%;
         top: 40px;
-    ;
 
       }
-      li a {
+      .nav__item a {
         display: block;
         padding: 10px;
         color: $color-text;

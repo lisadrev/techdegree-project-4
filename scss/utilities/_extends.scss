@@ -3,20 +3,8 @@
 // **********************************************
 
 
-%centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-%padding-left{
-  padding-left: 20px;
-}
-
-
-
-//Button and grid styles
-
+// Links/ Buttons and grid styles
 %btn {
   display: block;
   width: 100%;
@@ -25,17 +13,19 @@
   border-radius: $br;
   border-style: none;
 }
-// Links
-
-
-
-
-
 
 
 // Images
 
+%centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
-//Nav Items
+//Layout
+%padding-left{
+  padding-left: 20px;
+}

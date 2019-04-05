@@ -2,21 +2,17 @@
 // _images.scss
 // **********************************************
 
-img {
-  @extend %centered;
-}
-
 .img {
   @include m(avatar) {
+      @extend %centered;
       padding-top: 20px;
-      padding-bottom: 30px;
       @include mq(wide){
-        max-width: 200px;
         padding: 10px;
       }
 
   }
   @include m(frame) {
+    @extend %centered;
     padding: 10px;
     border: 1px solid lighten($grey, 30%);
     width: 100%;

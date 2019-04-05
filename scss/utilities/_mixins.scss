@@ -55,8 +55,11 @@
 
 // Flex
 
-@mixin flex-item ($grow, $shrink:null, $basis:null) {
-  flex-grow: $grow;
-  flex-shrink: $shrink;
-  flex-basis: $basis;
+@mixin flex($disp: flex, $dir:row, $wrap:nowrap, $just:null, $alignI:null, $alignC:null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $alignI;
+  align-content: $alignC;
 }

@@ -1,18 +1,22 @@
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors, .headline--primary, .blockquote {
-  padding-left: 20px; }
-
-.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors, button {
+.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors, .btn--default.theme__colors,
+.btn--success.theme__colors,
+.btn--error.theme__colors,
+.btn--warning.theme__colors,
+.btn--info.theme__colors {
   display: block;
   width: 100%;
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 5px;
   border-style: none; }
+
+.img--avatar, .img--frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors, .headline--primary, .blockquote {
+  padding-left: 20px; }
 
 .srt, .form__label--hidden {
   border: 0;
@@ -363,6 +367,7 @@ p:first-child {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
+      align-items: center;
       align-content: center; } }
 .grid__col--1 {
   margin-top: 10px;
@@ -532,21 +537,22 @@ nav {
       nav ul {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         position: absolute;
-        left: 40%;
+        left: 50%;
         top: 40px; } }
-    nav ul li a {
+    nav ul .nav__item a {
       display: block;
       padding: 10px;
       color: #858585;
       text-decoration: none;
       font-size: 18px; }
       @media (min-width: 768px) {
-        nav ul li a {
+        nav ul .nav__item a {
           font-size: 16px;
           margin-right: 15px; } }
-      nav ul li a:hover, nav ul li a:focus {
+      nav ul .nav__item a:hover, nav ul .nav__item a:focus {
         background-color: #80e8d1;
         color: #ffffff;
         border-radius: 5px; }
@@ -570,13 +576,16 @@ nav {
     .form__input {
       border-bottom-width: 6px; } }
 
-button {
+.btn--default.theme__colors,
+.btn--success.theme__colors,
+.btn--error.theme__colors,
+.btn--warning.theme__colors,
+.btn--info.theme__colors {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 1.5em;
-  background-color: pink; }
+  margin-top: 1.5em; }
 
 .btn--login {
   background-color: #51ddfc; }
@@ -590,23 +599,21 @@ button {
   background-color: #fd7856; }
 .btn--info {
   background-color: #927ac1; }
-.btn--info {
-  margin-bottom: 3em; }
 
 @media (min-width: 768px) {
   .grid__col--12 {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-left: 20px; }
     .grid__col--12 button {
       margin-right: 30px; } }
 .img--avatar {
-  padding-top: 20px;
-  padding-bottom: 30px; }
+  padding-top: 20px; }
   @media (min-width: 768px) {
     .img--avatar {
-      max-width: 200px;
       padding: 10px; } }
 .img--frame {
   padding: 10px;
@@ -623,10 +630,8 @@ button {
 .headline--secondary {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  line-height: 1.2; }
-  @media (min-width: 768px) {
-    .headline--secondary {
-      margin-top: 30px; } }
+  line-height: 1.2;
+  padding-top: 40px; }
 
 .headline--primary {
   font-size: 30px;
@@ -648,9 +653,9 @@ button {
   font-weight: 500;
   color: #858585;
   font-style: oblique;
-  margin-right: 0;
   border-left: 8px solid #80e8d1;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-left: 20px; }
 
 .card {
   margin-right: 50px; }

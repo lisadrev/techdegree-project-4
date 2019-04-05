@@ -7,9 +7,7 @@
     font-family: $stack-sans-serif;
     font-weight: $font-weight--light;
     line-height: 1.2;
-    @include mq(wide) {
-      margin-top: 30px;
-    }
+    padding-top: 40px;
   }
 }
 
@@ -31,9 +29,9 @@
   @include text($size:26px, $l-height:1.2, $weight:$font-weight--medium, $color:$color-text);
   font-style: oblique;
   @extend %padding-left;
-  margin-right: 0;
   border-left: 8px solid $riptide;
   border-radius: $br;
+  margin-left: 20px;
 }
 
 .card {
